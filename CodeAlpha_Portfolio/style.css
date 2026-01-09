@@ -1,0 +1,146 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #0f172a;
+    --light: #f8fafc;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+  }
+  
+  /* HERO */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 40px;
+  }
+  
+  .hero img {
+    width: 280px;
+    border-radius: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  
+  .hero-text p {
+    max-width: 500px;
+    font-size: 18px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  
+  /* SECTIONS */
+  .section {
+    padding: 80px 60px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+  }
+  
+  .section-text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+  }
+  
+  .dark {
+    background: var(--dark);
+    color: white;
+  }
+  
+  /* PROJECTS */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background: white;
+    color: var(--dark);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  /* SKILLS */
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .skills-row span {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--primary);
+    color: white;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
